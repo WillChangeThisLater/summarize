@@ -1,0 +1,24 @@
+[project]
+name = "summarize"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "WillChangeThisLater", email = "paulwendt567@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "aiobotocore>=2.22.0",
+    "aiofiles>=24.1.0",
+    "atlassian-python-api>=4.0.4",
+    "openai>=1.82.0",
+    "pillow>=11.2.1",
+    "rpdb>=0.2.0",
+]
+
+[project.scripts]
+summarize = "summarize:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
